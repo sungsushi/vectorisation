@@ -1,0 +1,16 @@
+name: vectorisation_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9  
+  - networkx
+  - pygraphviz     
+  - graphviz       
+  - matplotlib     
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  - seaborn     
+  - pyarrow   
+  - fastparquet
