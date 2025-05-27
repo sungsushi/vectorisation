@@ -34,12 +34,15 @@ Note:
 - ```/foodtype_categorised.csv``` is a csv of manual categorisation of ingredient type. 
 - ```/cuisine_geo_labels.csv``` is a csv of manual cuisine categorisation into geographical regions of origin. 
 
+### Enriched clusters in the GRN
+- The full ```.csv``` file of the enriched clusters, their TF family labels, and the GO slim descriptors can be found in ```grn_GO_enrichment.csv```, (also in ```data/grn/grn_GO_enrichment.csv```).
+
 ### ```src```
 - ```ipynb``` notebooks are here. 
     - ```00_visualisation.ipynb``` visualises the multipartite recipe network. **Figure 2C, 3B** 
     - ```01_vectorisation.ipynb``` performs the connectivity aggregation and vectorisation for the three networks. Saves these vectors (optional) into a ```processed``` subfolder in ```data/*/```. 
     - ```02_clustering.ipynb``` clusters and visualises these clusters into a dendrogram and associated vector heatmap. **Figures 1(A,B), 2(A,B), 3(A), 4, S1, S2, S3.**
-        - For the gene regulatory network, it performs the enrichment analysis for the clusters of transcription factors. The full ```.csv``` file of the enriched clusters, their TF family labels, and the GO slim descriptors can be found in ```data/grn/grn_GO_enrichment.csv```.
+        - For the gene regulatory network, it performs the enrichment analysis for the clusters of transcription factors. 
     - ```03_null_models_nb.ipynb``` includes null models of the specialization-diversity entropic vector euclidean pairwise distances for cell types, serial homologues and left-right pairs. **Figures 1D, 2D, 3B, S4**
 
 #### ```/module/```
