@@ -1,7 +1,7 @@
 # Code and data for *Homologous nodes in annotated complex networks*
 
 ## About:
-This is a repository for all code, analysis and data accompanying the Moon & Ahnert paper available [here](https://arxiv.org/). 
+This is a repository for all code, analysis and data accompanying the Moon & Ahnert paper. 
 
 ## Installation:
 - Run:
@@ -13,11 +13,16 @@ conda activate vectorisation_env
 - Then run Jupyter notebooks to do analysis and generate figures into the ```figures``` folder. 
 
 Note:
-- Requires ```Graphviz```  to be installed for ```dot``` layout in ```networkx``` ([see here](https://graphviz.org/download/)). 
+- Requires ```Graphviz```  to be installed for ```dot``` layout in ```networkx``` ([see here](https://graphviz.org/download/)) - the ```yml``` file should handle this/
 
 
 ## Contents:
 ### ```data```
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15525130.svg)](https://doi.org/10.5281/zenodo.15525130)
+
+Please download from the Zenodo link above and save into the repository directory.
+
 ####  ```/grn```: Graph regulatory network and associated metadata
 - ```/gene_association.tair``` is the gene ontology (GO) annotations associated with each gene downloaded from [The Arabidopsis Information Resource (TAIR)](https://www.arabidopsis.org/download/list?dir=GO_and_PO_Annotations%2FGene_Ontology_Annotations), Berardini et al., *Plant Physiology* (2004). Version generated: 2025-01-01. 
 - ```/AtRegNet.csv``` is the gene regulatory network of the *Arabidopsis Thalania*, available from [agris](https://agris-knowledgebase.org/downloads.html), Palaniswamy et al., *Plant Physiology* (2006). Version dated: 2019-03-11. 
@@ -38,7 +43,7 @@ Note:
 - The full ```.csv``` file of the enriched clusters, their TF family labels, and the GO slim descriptors can be found in ```grn_GO_enrichment.csv```, (also in ```data/grn/grn_GO_enrichment.csv```).
 
 ### ```src```
-- ```ipynb``` notebooks are here. 
+- ```ipynb``` notebooks are here. Recommended to run in order of numbering. 
     - ```00_visualisation.ipynb``` visualises the multipartite recipe network. **Figure 2C, 3B** 
     - ```01_vectorisation.ipynb``` performs the connectivity aggregation and vectorisation for the three networks. Saves these vectors (optional) into a ```processed``` subfolder in ```data/*/```. 
     - ```02_clustering.ipynb``` clusters and visualises these clusters into a dendrogram and associated vector heatmap. **Figures 1(A,B), 2(A,B), 3(A), 4, S1, S2, S3.**

@@ -110,6 +110,10 @@ def fw_typeshuff_wrapper(seed, meta_df, ind_to_id, a_AA_coo):
     shuff_a_AS_in_normalised = csr_row_norm(shuff_a_AS_in)
 
     # put together into one dataframe:
-    all_col_names = np.concatenate([type_col + '_out', type_col + '_in'])
+    # all_col_names = np.concatenate([type_col.astype(str) + '_out', type_col.astype(str) + '_in'])
+    all_col_names = np.concatenate([
+        np.char.add(type_col.astype(str), '_out'),
+        np.char.add(type_col.astype(str), '_in')
+    ])
     shuff_all_norm_vec_df = pd.DataFrame(sp.sparse.hstack([shuff_a_AS_out_normalised, shuff_a_AS_in_normalised]).toarray(), columns=all_col_names, index=animal_row)
     return shuff_all_norm_vec_df, meta_finest_shuff
