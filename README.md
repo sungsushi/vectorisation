@@ -13,7 +13,7 @@ conda activate vectorisation_env
 - Then run Jupyter notebooks to do analysis and generate figures into the ```figures``` folder. 
 
 Note:
-- Requires ```Graphviz```  to be installed for ```dot``` layout in ```networkx``` ([see here](https://graphviz.org/download/)) - the ```yml``` file should handle this/
+- Requires ```Graphviz```  to be installed for ```dot``` layout in ```networkx``` ([see here](https://graphviz.org/download/)) - the ```yml``` file should handle this.
 
 
 ## Contents:
