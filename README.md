@@ -1,7 +1,7 @@
 # Code and data for *Homologous nodes in annotated complex networks*
 
 ## About:
-This is a repository for all code, analysis and data accompanying the Moon & Ahnert paper. 
+This is a repository for all code, analysis and data accompanying the [Moon & Ahnert paper](https://doi.org/10.48550/arXiv.2505.23668). 
 
 ## Installation:
 - Run:
